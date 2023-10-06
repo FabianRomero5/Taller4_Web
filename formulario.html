@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="diseño.css">
+    <title>Formulario de Usuario</title>
+</head>
+<body>
+    <h2>Formulario de Usuario</h2>
+    <form id="formulario" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="30" class="custom-input">
+            <span class="error" id="error_nombre"></span>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required maxlength="30" class="custom-input">
+            <span class="error" id="error_apellido"></span>
+        </div>
+
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required class="custom-input">
+            <span class="error" id="error_direccion"></span>
+        </div>
+
+        <div>
+            <label for="ccusuario">CC Usuario:</label>
+            <input type="text" id="ccusuario" name="ccusuario" required minlength="9" maxlength="25" class="custom-input">
+            <span class="error" id="error_ccusuario"></span>
+        </div>
+
+        <div>
+            <label for="ccpaswd">CC Contraseña:</label>
+            <input type="password" id="ccpaswd" name="ccpaswd" required minlength="10" maxlength="25" class="custom-input">
+            <span class="error" id="error_ccpaswd"></span>
+        </div>
+
+        <div>
+            <label for="confirmar_ccpaswd">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar_ccpaswd" name="confirmar_ccpaswd" required class="custom-input">
+            <span class="error" id="error_confirmar_ccpaswd"></span>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required maxlength="120" class="custom-input">
+            <span class="error" id="error_email"></span>
+        </div>
+
+        <div>
+            <input type="radio" id="registroGustos" name="registroGustos">
+            <label for="registroGusto">Registro de Gustos</label>
+        </div>
+
+        <div id="seccionGustos" style="display: none;">
+            <h3>Registro de Gustos</h3>
+            <div>
+                <label for="colorFavorito">Color Favorito:</label>
+                <input type="text" id="colorFavorito" name="colorFavorito" class="custom-input">
+            </div>
+        
+            <div>
+                <label for="marcaCarro">Marca de Carro Favorita:</label>
+                <input type="text" id="marcaCarro" name="marcaCarro" class="custom-input">
+            </div>
+        
+            <div>
+                <label for="estiloCarro">Estilo de Carro Favorito:</label>
+                <input type="text" id="estiloCarro" name="estiloCarro" class="custom-input">
+            </div>
+        
+            <div>
+                <label for="modeloCarro">Modelo de Carro Favorito:</label>
+                <input type="text" id="modeloCarro" name="modeloCarro" class="custom-input">
+            </div>
+        
+                    <div>
+                        <label for="rangoPrecio">¿Cuánto está dispuest@ a pagar por un vehiculo?:</label>
+                        <div id="rangoPrecio"></div>
+                        <span id="minPrecio">0$</span>
+                        <span id="maxPrecio">200,000,000$</span>
+                    </div>    
+            </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="validaciones.js"></script>
+</body>
+</html>
