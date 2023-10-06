@@ -1,0 +1,49 @@
+.custom-input {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.custom-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.custom-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Mensaje de error */
+#mensaje_error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo personalizado para la barra de rango de nouislider */
+.noUi-horizontal {
+    height: 10px; /* Cambia la altura de la barra según tus preferencias */
+    background: #ccc; /* Cambia el color de fondo de la barra si lo deseas */
+}
+
+/* Estilo para los controles deslizantes */
+.noUi-handle {
+    width: 20px; /* Cambia el ancho de los controles deslizantes según tus preferencias */
+    height: 20px; /* Cambia la altura de los controles deslizantes según tus preferencias */
+    background: #007bff; /* Cambia el color de los controles deslizantes si lo deseas */
+    border: 2px solid #007bff; /* Cambia el color del borde de los controles deslizantes si lo deseas */
+    border-radius: 50%; /* Haz que los controles deslizantes tengan forma circular si lo deseas */
+}
+#rangoPrecio {
+    width: 80%; /* Cambia el valor para ajustar la anchura deseada */
+}
